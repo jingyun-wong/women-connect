@@ -16,3 +16,10 @@ Women Connect is a web application built for networking purposes. It was built d
 * Python Flask
 * D3.js
 * Socket.IO
+
+## How to run ##
+You can access the website through the link above. 
+
+For the messaging functionality to work:
+  1. Clone the code to Visual Studio Code
+  2. Run the chat.py file
