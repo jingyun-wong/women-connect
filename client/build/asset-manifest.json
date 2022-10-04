@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.75940fe7.css",
+    "main.js": "/static/js/main.c1cc9f06.js",
+    "static/media/women_empowerment_2 (1).jpg": "/static/media/women_empowerment_2 (1).a502d1e3261452341535.jpg",
+    "static/media/linkedin-sales-solutions-IjkIOe-2fF4-unsplash.jpg": "/static/media/linkedin-sales-solutions-IjkIOe-2fF4-unsplash.5058791f41cc46eb485d.jpg",
+    "static/media/women_empowerment_2 (3).jpg": "/static/media/women_empowerment_2 (3).b0f6effb3305beff22ff.jpg",
+    "static/media/women_empowerment.jpg": "/static/media/women_empowerment.4d0708c86c37a508e7ee.jpg",
+    "static/media/markus-winkler-btXaHWJbO4s-unsplash.jpg": "/static/media/markus-winkler-btXaHWJbO4s-unsplash.8cbf0805941d72528ab5.jpg",
+    "index.html": "/index.html",
+    "main.75940fe7.css.map": "/static/css/main.75940fe7.css.map",
+    "main.c1cc9f06.js.map": "/static/js/main.c1cc9f06.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75940fe7.css",
+    "static/js/main.c1cc9f06.js"
+  ]
+}

@@ -1,0 +1,41 @@
+.success:focus{ 
+    outline:none;
+}
+
+.highlight:hover{
+    outline-color: aqua;
+}
+
+.ant-modal-mask{
+    background-color: rgba(0,0,0,0.80);
+}
+
+.ant-comment-content-detail p{
+    white-space: nowrap ;
+}
+
+.signup{
+    background-color: rgba(129, 178, 154, 0.2);
+}
+
+/* .ant-menu-inline, .ant-menu-vertical, .ant-menu-vertical-left{
+    border: 0
+} */
+
+.ant-upload-list-picture .ant-upload-list-item-error, .ant-upload-list-picture-card .ant-upload-list-item-error{
+    border-color:transparent
+}
+
+.ant-menu-vertical .ant-menu-item, .ant-menu-vertical-left .ant-menu-item, .ant-menu-vertical-right .ant-menu-item, .ant-menu-inline .ant-menu-item, .ant-menu-vertical .ant-menu-submenu-title, .ant-menu-vertical-left .ant-menu-submenu-title, .ant-menu-vertical-right .ant-menu-submenu-title, .ant-menu-inline .ant-menu-submenu-title{
+    padding: 0;
+}
+
+.anticon{
+    vertical-align: 2px;
+}
+
+.ant-modal-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}

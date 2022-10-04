@@ -1,0 +1,60 @@
+variables:
+  APP_NAME_FRONTEND: women-connect
+  APP_NAME_BACKEND: women-connect-app
+  APP_NAME_CHAT: women-connect-chat
+
+stages:
+  - test
+  - deploy
+
+frontend-unit-test-job:
+  stage: test
+  image: node:latest
+  script:
+    - cd client
+    - npm install
+    - npm test
+  # allow_failure: true
+
+Build-Deploy-Frontend-to-Heroku:
+  stage: deploy
+  image: node:12.16.1
+  script:
+    - echo "Building Frontend"
+    - git remote add heroku https://heroku:$HEROKU_API_KEY@git.heroku.com/$APP_NAME_FRONTEND.git
+    - git push https://$HEROKU_USER:$HEROKU_API_KEY@git.heroku.com/$APP_NAME_FRONTEND.git HEAD:master
+    - echo "Frontend Deployed Success"
+  environment:
+    name: women-connect-app
+    url: https://women-connect.herokuapp.com/
+
+backend-unit-test-job:
+  stage: test
+  image: python:latest
+  script:
+    - pip install -r requirements.txt
+    - python
+    - python -m unittest
+  # allow_failure: true
+
+Build-Deploy-Backend-app-to-Heroku:
+  stage: deploy
+  script:
+    - echo "Building Backend"
+    - git remote add heroku https://heroku:$HEROKU_API_KEY@git.heroku.com/$APP_NAME_BACKEND.git
+    - git push https://$HEROKU_USER:$HEROKU_API_KEY@git.heroku.com/$APP_NAME_BACKEND.git HEAD:master
+    - echo "Backend Deployed Success"
+  environment:
+    name: women-connect-flask-app
+    url: https://women-connect-app.herokuapp.com/
+
+Build-Deploy-chat-app-to-Heroku:
+  stage: deploy
+  script:
+    - echo "Building Socket-io"
+    - git remote add heroku https://heroku:$HEROKU_API_KEY@git.heroku.com/$APP_NAME_CHAT.git
+    - git push https://$HEROKU_USER:$HEROKU_API_KEY@git.heroku.com/$APP_NAME_CHAT.git HEAD:master
+    - echo "Backend Chat Socketio Deployed Success"
+  environment:
+    name: women-connect-chat-app
+    url: https://women-connect-chat.herokuapp.com/
