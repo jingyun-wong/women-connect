@@ -1,4 +1,4 @@
-# :wave: DELIVERY HEROES
+# :wave: WOMEN CONNECT
 ## Website Link ## 
 https://women-connect.herokuapp.com
 
