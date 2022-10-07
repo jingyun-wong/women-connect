@@ -1,6 +1,6 @@
 import unittest
 import server
-import server.app as app
+import app as app
 
 
 class UserCheck(unittest.TestCase):
