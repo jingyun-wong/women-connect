@@ -6,6 +6,14 @@ Women Connect is a web application built for networking purposes. It was built d
 ## How to run ## 
 You can access the website through this: https://women-connect.herokuapp.com
 
+### Mentor Account ###
+Email: ernest@gmail.com
+Password: jingyun0309
+
+### Mentee Account ###
+Email: guest@gmail.com
+Password: guest
+
 For the messaging functionality to work:
   1. Clone the code to Visual Studio Code
   2. In the terminal, kindly type "pip install -r requirements.txt"
