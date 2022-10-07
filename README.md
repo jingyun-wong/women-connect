@@ -8,7 +8,7 @@ You can access the website through this: https://women-connect.herokuapp.com
 
 ### Mentor Account ###
 Email: ernest@gmail.com
-Password: jingyun0309
+Password: guest
 
 ### Mentee Account ###
 Email: guest@gmail.com
