@@ -14,11 +14,6 @@ Password: guest
 Email: guest@gmail.com <br/>
 Password: guest
 
-<b> For the messaging functionality to work: </b>
-  1. Clone the code to Visual Studio Code
-  2. In the terminal, kindly type "pip install -r requirements.txt"
-  3. Run the chat.py file
-
 *Application is still built in progress*
 
 
